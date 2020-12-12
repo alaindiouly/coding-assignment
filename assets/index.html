@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repertoire</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="user">
+          <span class="material-icons md-48 md-blue" id="userAvatar">
+            account_circle
+          </span>
+          <p id="userContact"><b id="bContact">Contacts</b></p>
+        </div>
+        <button id="openBtn">
+          <span class="material-icons add md-36"> add </span>
+          <b>Create contact</b>
+        </button>
+      </aside>
+      <main>
+        <div class="mainContainer">
+          <form class="searchBox">
+            <label for="search" id="searchLabel"></label>
+            <input
+              type="search"
+              class="searchBar"
+              placeholder="Search"
+              name="search"
+              required
+            />
+            <button type="submit" id="searchBtn">Search</button>
+          </form>
+          <div class="filterBox">
+            <p class="nameFilter">Name</p>
+            <p class="surnameFilter">Surname</p>
+            <p class="phoneFilter">Phone</p>
+            <p class="addressFilter">Address</p>
+          </div>
+          <div class="cardBox"></div>
+        </div>
+      </main>
+    </div>
+    <div class="popup" id="popup">
+      <form class="popup-container">
+        <div class="formDiv" id="formTitle"><b>Create new contact</b></div>
+        <div class="formDiv">
+          <div class="entryForm">
+            <div class="inputLogo">
+              <span class="material-icons md-48 md-lightgray" id="userAvatar">
+                account_circle
+              </span>
+            </div>
+            <div class="inputBox">
+              <label for="name"></label>
+              <input type="text" placeholder="Enter name" class="searchBar"
+              name="name" id="nameID" required / >*
+            </div>
+          </div>
+          <div class="entryForm">
+            <div class="inputLogo">
+              <span class="material-icons md-48 md-lightgray">
+                family_restroom
+              </span>
+            </div>
+            <div class="inputBox">
+              <label for="surname"></label>
+              <input
+                type="text"
+                placeholder="Enter surname"
+                class="searchBar"
+                name="surname"
+              />
+            </div>
+          </div>
+          <div class="entryForm">
+            <div class="inputLogo">
+              <span class="material-icons md-48 md-lightgray"> call </span>
+            </div>
+            <div class="inputBox">
+              <label for="phone"></label>
+              <input
+                type="tel"
+                placeholder="Enter phone"
+                class="searchBar"
+                name="phone"
+              />
+            </div>
+          </div>
+          <div class="entryForm">
+            <div class="inputLogo">
+              <span class="material-icons md-48 md-lightgray">
+                location_on
+              </span>
+            </div>
+            <div class="inputBox">
+              <label for="address"></label>
+              <input
+                type="text"
+                placeholder="Enter address"
+                class="searchBar"
+                name="address"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="formDiv" id="formButton">
+          <button type="submit" id="saveBtn">Save</button>
+          <button class="closeBtn">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="result" id="result">
+      <button class="closeBtn">Cancel</button>
+      <div class="resultBox"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+    <script></script>
+  </body>
+</html>
